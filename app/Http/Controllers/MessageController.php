@@ -88,8 +88,6 @@ class MessageController extends Controller
         {
             abort(401);
         }
-        
-        $message = message::find($message);
 
         $message->delete();
 
